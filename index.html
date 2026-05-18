@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PEGAWAI SIGAP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Inter',sans-serif;
+      min-height:100vh;
+      background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+      position:relative;
+    }
+
+    /* BOKEH BLUR EFFECT */
+
+    .bokeh{
+      position:absolute;
+      border-radius:50%;
+      filter:blur(90px);
+      opacity:0.6;
+      animation:float 10s ease-in-out infinite alternate;
+    }
+
+    .bokeh1{
+      width:350px;
+      height:350px;
+      background:#3b82f6;
+      top:-100px;
+      left:-100px;
+    }
+
+    .bokeh2{
+      width:300px;
+      height:300px;
+      background:#06b6d4;
+      bottom:-80px;
+      right:-80px;
+      animation-duration:12s;
+    }
+
+    .bokeh3{
+      width:220px;
+      height:220px;
+      background:#8b5cf6;
+      top:40%;
+      left:15%;
+      animation-duration:14s;
+    }
+
+    .bokeh4{
+      width:250px;
+      height:250px;
+      background:#10b981;
+      top:10%;
+      right:15%;
+      animation-duration:16s;
+    }
+
+    @keyframes float{
+      from{
+        transform:translateY(0px) translateX(0px) scale(1);
+      }
+      to{
+        transform:translateY(25px) translateX(15px) scale(1.08);
+      }
+    }
+
+    .container{
+      position:relative;
+      z-index:2;
+      width:90%;
+      max-width:700px;
+      text-align:center;
+      padding:50px 35px;
+      border-radius:28px;
+      background:rgba(255,255,255,0.08);
+      backdrop-filter:blur(18px);
+      border:1px solid rgba(255,255,255,0.12);
+      box-shadow:0 10px 40px rgba(0,0,0,0.35);
+    }
+
+    .logo{
+      width:120px;
+      height:120px;
+      margin:auto auto 25px;
+      border-radius:28px;
+      overflow:hidden;
+      background:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 10px 25px rgba(0,0,0,0.35);
+    }
+
+    .logo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    h1{
+      font-size:48px;
+      font-weight:800;
+      margin-bottom:15px;
+      letter-spacing:1px;
+    }
+
+    p{
+      font-size:17px;
+      line-height:1.8;
+      color:rgba(255,255,255,0.82);
+      margin-bottom:35px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:16px 34px;
+      border-radius:16px;
+      text-decoration:none;
+      font-size:16px;
+      font-weight:700;
+      color:white;
+      background:linear-gradient(135deg,#2563eb,#06b6d4);
+      transition:0.3s ease;
+      box-shadow:0 10px 25px rgba(37,99,235,0.35);
+    }
+
+    .btn:hover{
+      transform:translateY(-3px) scale(1.02);
+      box-shadow:0 15px 30px rgba(37,99,235,0.45);
+    }
+
+    .footer{
+      margin-top:35px;
+      font-size:13px;
+      color:rgba(255,255,255,0.55);
+    }
+
+    @media(max-width:768px){
+
+      .container{
+        padding:40px 25px;
+      }
+
+      h1{
+        font-size:34px;
+      }
+
+      p{
+        font-size:15px;
+      }
+
+      .btn{
+        width:100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BOKEH LIGHTS -->
+  <div class="bokeh bokeh1"></div>
+  <div class="bokeh bokeh2"></div>
+  <div class="bokeh bokeh3"></div>
+  <div class="bokeh bokeh4"></div>
+
+  <div class="container">
+
+    <div class="logo">
+      <img src="https://drive.google.com/thumbnail?id=1Nqu4wT9YDUJRid4fQidhb7LFV6I5E_ER&sz=w1000" alt="Logo PEGAWAI SIGAP">
+    </div>
+
+    <h1>PEGAWAI SIGAP</h1>
+
+    <p>
+      Sistem Informasi Administrasi dan Pengelolaan Pegawai
+      berbasis digital
+    </p>
+
+    <a class="btn" href="https://script.google.com/macros/s/AKfycbxtp1BMEDcMeVh6ogGijjLzkNF0xKoqAWLb1trElRJKQdnsmSAnYmZBD0ChcPLPIiCJ/exec" target="_blank">
+      Masuk Aplikasi
+    </a>
+
+    <div class="footer">
+      © 2026 PEGAWAI SIGAP
+    </div>
+
+  </div>
+
+</body>
+</html>
